@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "concurrently \"node app.js\" \"node index.js\""
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,12 @@
   "author": "Nikhila",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "http": "0.0.1-security",
     "mongoose": "^5.10.0"
   }
 }
